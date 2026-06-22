@@ -1,0 +1,26 @@
+name: Hello World Sanity Check
+
+# This defines the trigger event. The workflow runs whenever someone pushes to the main branch.
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  say-hello:
+    # Use standard GitHub-hosted runners for this basic sandbox test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository Code
+        uses: actions/checkout@v4
+
+      - name: Print a Welcome Message
+        run: |
+          echo "Hello, World!"
+          echo "The runner platform is running successfully."
+
+      - name: Inspect Environment Variables
+        run: |
+          echo "Current execution branch: $GITHUB_REF"
+          echo "Triggered by event: $GITHUB_EVENT_NAME"
+          echo "Working directory path: $GITHUB_WORKSPACE"
