@@ -1,0 +1,10 @@
+====
+Starting job 11453564 at Mon 22 Jun 15:38:21 BST 2026 for user dc-kili1.
+Running on nodes: b105
+====
+=== HOSTNAME ===
+b105.pri.cosma.local
+=== PATH CHECK ===
+/usr/bin/gitlab-runner
+=== PROCESS CHECK ===
+dc-kili1    3794    3785  0 15:38 ?        00:00:00 grep gitlab

@@ -1,0 +1,9 @@
+====
+Starting job 11453580 at Mon 22 Jun 15:39:51 BST 2026 for user dc-kili1.
+Running on nodes: b105
+====
+Runtime platform                                  [0;m  arch[0;m=amd64 os[0;m=linux pid[0;m=3886 revision[0;m=9ffb4aa0 version[0;m=18.8.0
+gitlab-runner: Service is running
+Runtime platform                                  [0;m  arch[0;m=amd64 os[0;m=linux pid[0;m=3911 revision[0;m=9ffb4aa0 version[0;m=18.8.0
+Created missing unique system ID                  [0;m  system_id[0;m=s_856560b0a36c
+Listing configured runners                        [0;m  ConfigFile[0;m=/cosma/home/durham/dc-kili1/.gitlab-runner/config.toml

@@ -1,0 +1,6 @@
+====
+Starting job 11453608 at Mon 22 Jun 15:46:56 BST 2026 for user dc-kili1.
+Running on nodes: b105
+====
+=== SYSTEM CONFIG ===
+cat: /etc/gitlab-runner/config.toml: Permission denied
