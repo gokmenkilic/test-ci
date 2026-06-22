@@ -16,5 +16,9 @@ jobs:
         run: |
           echo "Runner is active on the login node. Dispatching command to b105..."
           
-          # Wrap the execution in srun to cross the network bridge to the compute node
-          srun -p bluefield1 -A do009 --nodelist=b105 hostname
+          # Added --time=00:05:00 to satisfy COSMA's strict allocation rules
+          srun -p bluefield1 -A do009 --time=00:05:00 --nodelist=b105 bash -c '
+            echo "Hello from the compute node!"
+            echo "My hostname is: $(hostname)"
+            echo "My working directory is: $(pwd)"
+          '
