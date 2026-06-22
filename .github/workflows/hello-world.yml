@@ -17,14 +17,14 @@ jobs:
       - name: Print a Welcome Message
         run: |
            echo "Hello, World!"
-          echo "Executing directly on node:"
-          hostname 
+           echo "Executing directly on node:"
+           hostname 
 	  
-          #echo "Hello, World!"
-          #echo "The runner platform is running successfully."
+           #echo "Hello, World!"
+           #echo "The runner platform is running successfully."
 
       - name: Inspect Environment Variables
         run: |
-          echo "Current execution branch: $GITHUB_REF"
-          #echo "Triggered by event: $GITHUB_EVENT_NAME"
-          echo "Working directory path: $GITHUB_WORKSPACE"
+           echo "Current execution branch: $GITHUB_REF"
+           #echo "Triggered by event: $GITHUB_EVENT_NAME"
+           echo "Working directory path: $GITHUB_WORKSPACE"
